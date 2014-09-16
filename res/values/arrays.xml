@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="nav_menu_items">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Rides Summary</item>
+        <item >Help</item>
+        <item>Log Out</item>
+                     
+    </string-array>   
+</resources>

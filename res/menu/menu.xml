@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    
+    <item  android:id="@+id/menu_search"
+         android:icon="@drawable/ic_action_search"
+          android:title="@string/cancel"
+        app:showAsAction="ifRoom|collapseActionView" />
+    
+    <item
+        android:id="@+id/menu_proceed"
+        android:title="@string/proceed"
+        app:showAsAction="ifRoom|collapseActionView"/>
+    <!--      app:actionViewClass="android.support.v7.widget.SearchView" -->
+     <item
+        android:id="@+id/menu_cancel"
+        android:title="@string/cancel"
+        android:visible="false"        
+        app:showAsAction="ifRoom|collapseActionView"/>
+     
+         <item
+        android:id="@+id/options"
+        android:title="Options" />
+     
+      
+    
+  
+</menu>

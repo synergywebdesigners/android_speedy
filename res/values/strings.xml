@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navigation -->
+    <string name="header">User</string>
+    <string name="app_name">SPEEDY</string>
+    <string name="clear"></string>
+    <string name="add">Add</string>
+    <string name="proceed">PROCEED</string>
+    <string name="cancel">CANCEL</string>
+    <string name="update">Update</string>
+    <string name="drawer_open">Open drawer navigation</string>
+    <string name="drawer_close">Navigation drawer Close</string>
+    <string name="titulo_user">User Name</string>
+    <string name="subtitulo_user">User Mail Id</string>
+    <string name="tab_one">Current Rides</string>
+    <string name="tab_two">Upcoming Rides</string>
+    <string name="tab_three"> Completed Rides </string>
+    <string name="fragment_my_apps">This is MyApps</string>
+    <string name="fragment_shop_apps">This is ShopApps</string>
+    <string name="fragment_tab_one">This is One</string>
+    <string name="fragment_tab_two">This is Two</string>
+    <string name="fragment_tab_three">This is Three</string>
+    <string name="add1">Address 1</string>
+    <string name="add2">Address 2</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email Id</string>
+    <string name="changepassword">Change Password</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="zipcode">Zip Code</string>
+    <string name="age">Age</string>
+    <string name="sex">Sex</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="password">Password</string>
+    <string name="repassword">Confirm Password</string>
+    <string name="mobnumber">Mobile Number</string>
+    <string name="alternateMobile">Alternate Mobile</string>
+    <string name="mobcountry">Mobile Country</string>
+    <string name="language">Language</string>
+    <string name="creditnum">Credit Card Number</string>
+    <string name="cvv">CVV</string>
+    <string name="promitioncode">Promotion Code</string>
+    <string name="privracy">By creating an account you agree to our</string>
+    <string name="remeberme">Remember Me</string>
+    <string name="termsncon"><a href="">Terms and Conditions</a></string>
+    <string name="forgotpassword"><a href="https://www.google.pl/">Forgot Password</a></string>
+    <!--
+ mLink = (TextView) findViewById(R.id.link);
+ if (mLink != null) {
+   mLink.setMovementMethod(LinkMovementMethod.getInstance());
+ }
+    -->
+
+    <string name="address_unavailable">Address unavailable</string>
+    <string name="bt_report_crises">Report</string>
+    <string name="updating_Location">Updating Location...</string>
+
+    <!-- radio buttons -->
+    <string name="speedy_sedan">Speedy Sedan</string>
+    <string name="radio_regular">Regular Sedan Taxi</string>
+    <string name="radio_van">Speedy Van</string>
+    <string name="radio_suv">Speedy SUV</string>
+    
+    <string name="radio_towing">Towing Car Services</string>
+    
+    <string name="radio_hc">Hook and Chain</string>
+    <string name="radio_wl">Wheel Lift</string>
+    <string name="radio_fb">Flat Bed</string>
+    
+    <string name="radio_ambulatory">Ambulatory</string>
+    <string name="radio_wheel">Wheel chair services</string>
+    
+    <string name="dri_comp_name">Company Name</string>
+    <string name="dri_comp_address">Address</string>
+    <string name="dri_comp_city">City</string>
+    <string name="dri_comp_state">State</string>
+    <string name="dri_comp_zip">Zip Code</string>
+    <string name="dri_comp_phone">Phone Number</string>
+    <string name="dri_fname">First Name</string>
+    <string name="dri_lname">Last Name</string>
+    <string name="dri_email">Email Id</string>
+    <string name="dri_mobile">Mobile Number</string>
+    <string name="dri_lang">Language</string>
+    <string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    <string name="paymentoptions">Payment options</string>
+    <string name="choosetaxi">Choose taxi</string>
+
+</resources>

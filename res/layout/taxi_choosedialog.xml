@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:padding="10dp"
+    android:background="@drawable/edit_text"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="Taxi Services"
+                android:textColor="#FFBF00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioTaxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radioRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Taxi Services"
+                    android:text="@string/speedy_sedan"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radioVan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Taxi Services"
+                    android:text="@string/radio_regular"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radioLuxury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Taxi Services"
+                    android:text="@string/radio_van"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radiosuv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Taxi Services"
+                    android:text="@string/radio_suv"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text="Towing Services"
+                    android:textColor="#FFBF00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radio_hc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="@string/radio_towing"
+                    android:text="@string/radio_hc"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radio_wl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:tag="@string/radio_towing"
+                    android:text="@string/radio_wl"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radio_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:tag="@string/radio_towing"
+                    android:text="@string/radio_fb"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:text=" Medical Transportation Services"
+                    android:textColor="#FFBF00"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioAmbulatory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Medical Transportation Services"
+                    android:text="@string/radio_ambulatory"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/radioWheel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="Medical Transportation Services"
+                    android:text="@string/radio_wheel"
+                    android:textColor="#ffffff" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

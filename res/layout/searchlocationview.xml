@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="#dddddd">
+	<ListView 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:id="@+id/searchListView"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"	 
+	    android:background="#ffffff" 
+	    />
+	
+	
+	 <RelativeLayout
+         android:id="@+id/homedialogview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginLeft="5dp"
+         android:layout_marginRight="5dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/dailogview"
+         android:padding="8dp" 
+         android:visibility="invisible"
+         >
+
+         <ProgressBar
+             android:id="@+id/feedbackprogress"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:indeterminateDrawable="@drawable/whiteprogress_indeterminate"
+             android:layout_centerVertical="true"
+             android:padding="1dp" />
+
+         <TextView
+             android:id="@+id/txtdHome"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/feedbackprogress"
+             android:layout_centerVertical="true"
+             android:text="Loading... "
+             android:layout_marginLeft="5dp"
+             android:textColor="#ffffff"
+             android:textSize="14sp" />
+     </RelativeLayout>
+</RelativeLayout>

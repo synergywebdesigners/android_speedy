@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+   
+    <TextView 
+        android:id="@+id/text_street_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/updating_Location"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        />
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@android:color/transparent"
+	    android:orientation="horizontal" >
+	    <Button
+	        android:id="@+id/pickupbtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Change Pick Location"
+	        android:textSize="14sp"
+	        android:textStyle="bold" 
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_weight="1"
+	        android:lines="2"
+	        />
+	    
+	    <Button
+	        android:id="@+id/dropbtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Drop Location"
+	        android:textSize="16sp"
+	        android:textStyle="bold" 
+	        android:layout_marginBottom="1dp"
+	        android:layout_marginLeft="3dp"
+	        android:layout_marginRight="3dp"
+	        android:layout_weight="1"
+	        android:lines="2"
+	        />
+    </LinearLayout>
+    <!--
+    <Button
+        android:id="@+id/text_street_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/address_unavailable"
+        android:textSize="16sp"
+        android:textStyle="bold" />  -->
+
+
+</LinearLayout>

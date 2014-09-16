@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speedy.main"
+    android:versionCode="2"
+    android:versionName="0.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.speedy.main.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.speedy.main.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Creating Permission to receive Google Maps -->
+    <permission
+        android:name="com.speedy.main.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <!-- Permission to receive Google Maps -->
+    <uses-permission android:name="com.speedy.main.permission.MAPS_RECEIVE" />
+    <!-- Permission to read Google Services -->
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.speedy.main.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.speedy.main.NavigationMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="com.speedy.main.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.speedy.main.AskViewActivity"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="com.speedy.main.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="com.speedy.main.TaxiChooser"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="com.speedy.main.CustomerTripDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="br.liveo.driver.DriverPersonalInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+            />
+        <activity
+            android:name="br.liveo.driver.DriverCompanyInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- Google Maps Fragment API Key Data -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBKnRz4i1CjoKWNcwDhERwzFw_PlQQnm-Y" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.speedy.main" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+        <service android:name=".LocationService" >
+        </service>
+
+        <activity
+            android:name=".NoficationDemoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name="com.speedy.main.SearchLocation"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" />
+        <activity
+            android:name=".VehicleRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CustomerDetailsForDriver"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+        </activity>
+        <activity
+            android:name=".ChangePassoword"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+        </activity>
+        <activity
+            android:name=".RideDetailInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+        </activity>
+        <activity
+            android:name=".CustomerDNPDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+        </activity>
+        <activity
+            android:name=".DriverRidePayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/LiveoActionBarTheme" >
+        </activity>
+        <activity
+            android:name="com.braintreepayments.api.dropin.BraintreePaymentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.braintreepayments.demo.MainActivity"
+            android:label="Options"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.braintreepayments.demo.OptionsActivity"
+            android:label="Options"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.braintreepayments.demo.CustomFormActivity"
+            android:label="Buy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.braintreepayments.demo.FinishedActivity"
+            android:label="Purchase Complete"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
